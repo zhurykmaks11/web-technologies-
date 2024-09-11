@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета користувача</title>
+</head>
+<body>
+<h1>Анкета користувача</h1>
+<form action="/submit" method="post" enctype="multipart/form-data">
+  <!-- Особисті дані -->
+  <fieldset>
+    <legend>Особисті дані</legend>
+
+    <label for="name">Ваше ім'я:</label>
+    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Введіть ваш email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+
+    <label for="tel">Мобільний номер:</label>
+    <input type="tel" id="tel" name="tel" placeholder="Введіть ваш номер телефону" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" placeholder="Придумайте пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required><br><br>
+
+    <label for="dob">Дата народження:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+  </fieldset>
+
+  <!-- Стать -->
+  <fieldset>
+    <legend>Стать</legend>
+
+    <label><input type="radio" name="gender" value="male" required> Чоловіча</label><br>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label><br>
+    <label><input type="radio" name="gender" value="other"> Інше</label><br>
+
+  </fieldset>
+
+  <!-- Захоплення -->
+  <fieldset>
+    <legend>Захоплення</legend>
+
+    <label><input type="checkbox" name="hobby" value="reading"> Читання</label><br>
+    <label><input type="checkbox" name="hobby" value="traveling"> Подорожі</label><br>
+    <label><input type="checkbox" name="hobby" value="sports"> Спорт</label><br>
+    <label><input type="checkbox" name="hobby" value="music"> Музика</label><br>
+
+  </fieldset>
+
+  <!-- Улюблений колір -->
+  <fieldset>
+    <legend>Улюблений колір</legend>
+
+    <label for="color">Виберіть колір:</label>
+    <select id="color" name="color">
+      <option value="red">Червоний</option>
+      <option value="blue">Синій</option>
+      <option value="green" selected>Зелений</option>
+      <option value="yellow">Жовтий</option>
+      <option value="black">Чорний</option>
+    </select><br><br>
+
+  </fieldset>
+  <!-- Улюблені страви (множинний вибір) -->
+  <fieldset>
+    <legend>Улюблені страви</legend>
+
+    <label for="foods">Виберіть ваші улюблені страви:</label>
+    <select id="foods" name="foods" multiple>
+      <option value="pizza">Піца</option>
+      <option value="pasta">Паста</option>
+      <option value="sushi">Суші</option>
+      <option value="burger">Бургер</option>
+      <option value="salad">Салат</option>
+      <option value="steak">Стейк</option>
+    </select><br><br>
+
+  </fieldset>
+
+  <!-- Вибір країни -->
+  <fieldset>
+    <legend>Виберіть країну</legend>
+
+    <label for="country">Країна:</label>
+    <select id="country" name="country">
+      <optgroup label="Європа">
+        <option value="ukraine">Україна</option>
+        <option value="poland">Польща</option>
+        <option value="germany">Німеччина</option>
+      </optgroup>
+      <optgroup label="Америка">
+        <option value="usa">США</option>
+        <option value="canada">Канада</option>
+        <option value="brazil">Бразилія</option>
+      </optgroup>
+      <optgroup label="Азія">
+        <option value="china">Китай</option>
+        <option value="japan">Японія</option>
+        <option value="india">Індія</option>
+      </optgroup>
+      <optgroup label="Африка">
+        <option value="egypt">Єгипет</option>
+        <option value="nigeria">Нігерія</option>
+        <option value="south-africa">ПАР</option>
+      </optgroup>
+    </select><br><br>
+
+  </fieldset>
+
+  <!-- Текстова область -->
+  <fieldset>
+    <legend>Ваші коментарі</legend>
+
+    <label for="comments">Коментарі:</label><br>
+    <textarea id="comments" name="comments" placeholder="Ваші побажання"></textarea><br><br>
+
+  </fieldset>
+
+  <!-- Файли -->
+  <fieldset>
+    <legend>Завантаження файлів</legend>
+
+    <label for="audio">Завантажте аудіофайли:</label><br>
+    <input type="file" id="audio" name="audio" accept="audio/*" multiple><br><br>
+
+  </fieldset>
+
+  <!-- Випадний список з підказками -->
+  <fieldset>
+    <legend>Місто проживання</legend>
+
+    <label for="city">Введіть місто:</label>
+    <input list="cities" id="city" name="city" placeholder="Введіть ваше місто">
+    <datalist id="cities">
+      <option value="Київ">
+      <option value="Львів">
+      <option value="Одеса">
+      <option value="Харків">
+      <option value="Дніпро">
+      <option value="Чернівці">
+      <option value="Закарпаття">
+    </datalist><br><br>
+
+  </fieldset>
+
+  <!-- Кнопки -->
+  <fieldset>
+    <legend>Завершення</legend>
+
+    <button type="submit">Відправити</button>
+    <button type="reset">Скинути</button><br><br>
+
+  </fieldset>
+</form>
+</body>
+</html>
