@@ -1,0 +1,56 @@
+/* Основні стилі для всіх елементів */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Стилі для заголовка */
+.title {
+    color: #b22222;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Стилі для підзаголовка */
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Стилі для переліку інгредієнтів */
+.ingredients {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Відмітка (mark) для тексту */
+mark {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Стилі для горизонтальної лінії */
+.divider {
+    background-color: darkgreen;
+    height: 4px;
+    width: 500px;
+    margin: 20px auto;
+    border: none;
+}
+
+/* Стилі для цитати */
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #555;
+}

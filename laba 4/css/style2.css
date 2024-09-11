@@ -1,0 +1,52 @@
+/* 3.1. Фіолетовий колір для всіх посилань меню */
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+/* 3.2. Зелений колір лише для головних пунктів меню */
+.main-item {
+    color: green;
+    line-height: 1.8;
+}
+.fruit{
+    line-height: 1.4;
+    text-decoration: underline;
+}
+
+/* 3.3. Зміна типу маркера для вкладеного списку ягід на квадрат */
+.berries-list li{
+    list-style-type: square;
+}
+
+/* 3.4. Зміна типу маркера для вкладеного списку овочів на піктограму (зображення галочки) */
+.veggie-list {
+    list-style-type:none ; /* Прибрати стандартний маркер */
+}
+
+.veggie-list li {
+
+    background-image: url('../img/li.svg'); /* Шлях до зображення галочки */
+    background-repeat: no-repeat;
+    background-position: 0 50%; /* Вирівнювання зображення по вертикалі */
+    padding-left: 20px; /* Відступ для тексту, щоб не заходив на зображення */
+    line-height: 1.4;
+    text-decoration: underline;
+}
+
+
+/* 3.5. Прибрати маркери у вкладених списках */
+ul ul li {
+    list-style-type: none;
+}
+
+/* 3.6. Заборона підкреслення для посилань в останньому списку */
+.berries-list a {
+    text-decoration: none;
+}
+
+/* 3.7. Нумерований список "Різне" з внутрішнім розташуванням маркерів */
+.various-list {
+    list-style-position: inside;
+    line-height: 1.8;
+}
