@@ -1,0 +1,51 @@
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+/* Перший стовпець (Choose your plan) */
+thead th:nth-child(1) {
+    background: linear-gradient(to bottom, #ff6523 0%,#ffb3af 51%,#dc2f04 100%);
+    color: white;
+}
+
+thead th:nth-child(2) {
+    background: linear-gradient(to bottom, #ff6523 0%,#ff938d 51%,#dc2f04 100%);
+    color: white;
+}
+
+thead th:nth-child(3) {
+    background: linear-gradient(to bottom, #ff5e19 0%,#ff746b 49%,#d02d04 100%);
+    color: white;
+}
+
+thead th:nth-child(4) {
+    background: linear-gradient(to bottom, #ff5e19 0%,#ff1905 49%,#d02d04 100%);
+    color: white;
+}
+
+thead th:nth-child(5) {
+    background: linear-gradient(to bottom, #dc0033 0%,#c4002e 0%,#a60027 100%);
+    color: white;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f5e4d5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #bc081c;
+}
+
+td {
+    width: 20%;
+}
+tbody > tr > th{
+    background: linear-gradient(to bottom, #ff1a00 0%,#f43d40 48%,#ff1a00 100%);
+    color: white;
+)
+}

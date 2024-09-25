@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8508d23d-6f1f-4ffe-9aee-2623cdd9be19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/airplane_ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/car_rental.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/casino.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/festival.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/home_.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/hotel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/local_bar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/museum.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/img/rule.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/lab5_1/laba5_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/lab5_1/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/lab5_2/laba5_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/lab5_2/style2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/test/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laba 5/test/4453.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laba 4/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/../laba 4/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laba 4/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/../laba 4/css/style4.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zhurykmaks11"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zhurykmaks11/web-technologies-",
+    "accountId": "c4ce4fa6-493c-40c0-97f1-65723b84d113"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2mLkLSm89smG7Tr1lPCXEtk6osh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Користувач/OneDrive/Рабочий стол/web-technologies-/laba 2",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8508d23d-6f1f-4ffe-9aee-2623cdd9be19" name="Changes" comment="" />
+      <created>1726863187216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726863187216</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

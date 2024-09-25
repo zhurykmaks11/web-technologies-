@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    background-color: rgb(255, 165, 0); /* Оранжевий фон */
+    width: 500px; /* Ширина блоку 500px */
+    padding: 20px; /* Внутрішній відступ з усіх сторін */
+    color: white; /* Колір тексту білий */
+}
+
+/* Заголовок 1-го рівня */
+h1 {
+    font-size: 25px; /* Розмір тексту 25px */
+    font-weight: 900; /* Насиченість шрифту – 900 (black) */
+    margin-bottom: 10px; /* Нижній зовнішній відступ 10px */
+}
+/* Загальні вимоги для маркерованого списку */
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+/* Маркерований список 1-го рівня */
+ul > li  {
+
+    background-color: rgb(103, 158, 128); /* Колір фону */
+    padding-right: 20px; /* Внутрішній відступ правий */
+    padding-left: 50px; /* Внутрішній відступ лівий */
+
+}
+ul > li{
+    background-size: 10%;
+    background-image: url('../img/rule.svg');
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position:0 0; /* Position image at the start of the list item */
+}
+/* Маркерований список 2-го рівня */
+ul  ul  li {
+    font-size: 18px; /* Розмір тексту */
+    font-style: italic; /* Курсив */
+    background-color: rgb(153, 180, 102); /* Колір фону */
+    margin-bottom: 10px; /* Нижній зовнішній відступ */
+    padding-left: 40px; /* Внутрішній відступ лівий */
+}
+
+/* Елемент span */
+span {
+    padding: 10px 20px; /* Верхній/нижній – 10px, лівий/правий – 20px */
+    display: inline-block; /* Рядково-блочний елемент */
+}
+
+/* Елемент span в маркерованому списку 1-го рівня */
+ul.level-1 > li >span {
+    font-size: 20px; /* Розмір тексту */
+    font-weight: 700; /* Насиченість шрифту – 700 (bold) */
+    background-color: rgb(199, 124, 106); /* Колір фону */
+    margin-bottom: 10px; /* Нижній зовнішній відступ */
+}
+
+/* Елемент span в маркерованому списку 2-го рівня */
+ul ul li>span{
+    background-color: rgb(218, 106, 32); /* Колір фону */
+}
+.li-img{
+    background-position: center left;
+    background-size: contain;
+}
+.way{
+    background-image: url('../img/map.svg');
+}
+.plane{
+    background-image: url('../img/airplane_ticket.svg');
+}
+.hotel{
+    background-image: url('../img/hotel.svg');
+}
+.car{
+    background-image: url('../img/car_rental.svg');
+}
+.bar{
+    background-image: url('../img/local_bar.svg');
+}
+.casino{
+    background-image: url('../img/casino.svg');
+}
+.fest{
+    background-image: url('../img/festival.svg');
+}
+.museum{
+    background-image: url('../img/museum.svg');
+}
