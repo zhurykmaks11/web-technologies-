@@ -23,7 +23,6 @@ ul {
     list-style-position: inside;
 }
 
-/* Маркерований список 1-го рівня */
 ul > li  {
 
     background-color: rgb(103, 158, 128); /* Колір фону */
@@ -37,58 +36,67 @@ ul > li{
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
     background-position:0 0; /* Position image at the start of the list item */
 }
-/* Маркерований список 2-го рівня */
-ul  ul  li {
-    font-size: 18px; /* Розмір тексту */
-    font-style: italic; /* Курсив */
-    background-color: rgb(153, 180, 102); /* Колір фону */
-    margin-bottom: 10px; /* Нижній зовнішній відступ */
-    padding-left: 40px; /* Внутрішній відступ лівий */
+
+ul li + li {
+    margin-top: 10px;
 }
 
-/* Елемент span */
 span {
-    padding: 10px 20px; /* Верхній/нижній – 10px, лівий/правий – 20px */
-    display: inline-block; /* Рядково-блочний елемент */
+    padding: 10px 20px;
+    display: inline-block;
 }
 
-/* Елемент span в маркерованому списку 1-го рівня */
-ul.level-1 > li >span {
-    font-size: 20px; /* Розмір тексту */
-    font-weight: 700; /* Насиченість шрифту – 700 (bold) */
-    background-color: rgb(199, 124, 106); /* Колір фону */
-    margin-bottom: 10px; /* Нижній зовнішній відступ */
-}
-
-/* Елемент span в маркерованому списку 2-го рівня */
 ul ul li>span{
     background-color: rgb(218, 106, 32); /* Колір фону */
 }
-.li-img{
-    background-position: center left;
-    background-size: contain;
+.plan-item{
+    font-size: 18px; /* Розмір тексту */
+    font-style: italic; /* Курсив */
+    background-color: rgb(153, 180, 102); /* Колір фону */
+    /*margin-bottom: 10px; !* Нижній зовнішній відступ *!*/
+    padding-left: 40px; /* Внутрішній відступ лівий */
 }
-.way{
-    background-image: url('../img/map.svg');
+
+.plan-list {
+    .plan-title {
+        font-size: 20px; /* Розмір тексту */
+        font-weight: 700; /* Насиченість шрифту – 700 (bold) */
+        background-color: rgb(199, 124, 106); /* Колір фону */
+        margin-bottom: 10px; /* Нижній зовнішній відступ */
+    }
 }
-.plane{
-    background-image: url('../img/airplane_ticket.svg');
-}
-.hotel{
-    background-image: url('../img/hotel.svg');
-}
-.car{
-    background-image: url('../img/car_rental.svg');
-}
-.bar{
-    background-image: url('../img/local_bar.svg');
-}
-.casino{
-    background-image: url('../img/casino.svg');
-}
-.fest{
-    background-image: url('../img/festival.svg');
-}
-.museum{
-    background-image: url('../img/museum.svg');
+.plan-sublist {
+
+    li {
+        background-position: center left;
+        background-size: contain;
+    }
+    .has-icon{
+        background-position: center left;
+        background-size: contain;
+    }
+    .icon-way{
+        background-image: url('../img/map.svg');
+    }
+    .icon-plane{
+        background-image: url('../img/airplane_ticket.svg');
+    }
+    .icon-hotel{
+        background-image: url('../img/hotel.svg');
+    }
+    .icon-car{
+        background-image: url('../img/car_rental.svg');
+    }
+    .icon-bar{
+        background-image: url('../img/local_bar.svg');
+    }
+    .icon-casino{
+        background-image: url('../img/casino.svg');
+    }
+    .icon-fest{
+        background-image: url('../img/festival.svg');
+    }
+    .icon-museum{
+        background-image: url('../img/museum.svg');
+    }
 }

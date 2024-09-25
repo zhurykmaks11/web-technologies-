@@ -45,7 +45,7 @@ td {
     width: 20%;
 }
 tbody > tr > th{
-    background: linear-gradient(to bottom, #ff1a00 0%,#f43d40 48%,#ff1a00 100%);
+    background: linear-gradient(#ff1a00 0%,#f43d40 48%,#ff1a00 100%);
     color: white;
 )
 }
