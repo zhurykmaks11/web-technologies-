@@ -1,0 +1,92 @@
+.panda-logo img {
+    border-radius: 80px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+li {
+    margin: 10px;
+    float: left;
+}
+li a {
+    text-align: right;
+    display: inline-block;
+    padding: 10px;
+    background: orangered;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: #ae6d14 2px 2px 1px;
+}
+.panda {
+    width: 1140px;
+    margin: 0 auto; /* Вирівнювання по центру */
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    border-right: 20px;
+    background-color: sandybrown;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.panda-menu{
+    padding-right: 20px;
+    width: 100%; /* Щоб меню розтягнулося на всю ширину контейнера */
+}
+/* Стилі для меню */
+.panda-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panda-menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+.column-wrapper {
+    margin: 0 120px;
+}
+.row-wrapper {
+    display: inline-block;
+    width: inherit;
+}
+.content-block h3,
+.content-block h4 {
+    text-align: center;
+}
+.content-block p{
+    text-align: justify;
+}
+.content-block {
+    margin: 30px;
+    padding: 20px 60px;
+    background-color: rosybrown;
+    border-radius: 50px;
+}
+.inner-content-block{
+    width: 300px;
+    float: left;
+    margin: auto;
+    padding: 20px 60px;
+    background-color: #ff9501;
+    border-radius: 50px;
+}
+
+.inner-content-block:last-child {
+    margin-left: 150px
+
+}

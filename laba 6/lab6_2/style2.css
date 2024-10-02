@@ -1,0 +1,146 @@
+.panda-logo img {
+    border-radius: 80px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+li {
+    margin: 10px;
+    float: left;
+}
+li a {
+    text-align: right;
+    display: inline-block;
+    padding: 10px;
+    background: orangered;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: #ae6d14 2px 2px 1px;
+}
+.panda {
+    width: 1140px;
+    margin: 0 auto; /* Вирівнювання по центру */
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    border-right: 20px;
+    background-color: sandybrown;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.panda-menu{
+    padding-right: 20px;
+    width: 100%; /* Щоб меню розтягнулося на всю ширину контейнера */
+}
+/* Стилі для меню */
+.panda-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panda-menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+.container-block-div {
+    margin: 100px 0px;
+    display: inline-block;
+    text-align: justify;
+    position: relative;
+    width: 100%; /* Ширина контейнера на 100% */
+    overflow: hidden; /* Для очищення плаваючих елементів (якщо залишились) */
+}
+.container-block{
+    float: left; /* Плаваючі блоки вліво */
+    width: 30%; /* Ширина кожного блоку - третина контейнера */
+    margin: 1.5%; /* Відступ між блоками */
+    padding: 20px;
+    height: 250px;
+    box-sizing: border-box;
+
+}
+.container-block:nth-child(3n+1) {
+    clear: left; /* Починаємо новий ряд після кожних трьох блоків */
+}
+.content-block1{
+    border: 2px solid green;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.content-block2{
+    border: 2px solid green;
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.content-block3{
+    border: 2px solid green;
+    border-radius: 40px  40px ;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius:50% ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.content-block4{
+    border: 20px solid green;
+    border-color: green greenyellow;
+    border-radius: 150px / 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.content-block5{
+    border: 20px solid green;
+    border-color: greenyellow  green;
+    border-radius: 280px 10px / 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content-block6{
+    border: 20px solid green;
+    border-color: greenyellow greenyellow greenyellow green;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.content-block7 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/border.png") 18 18 18 18;
+}
+.content-block8 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/border.png") 15 / 15px round;
+}
+.content-block9 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/border.png") 27 / 15px round;
+}
+.content-block10{
+    border: double #ffbd67 15px;
+    border-image: url("../img/border3.png") 20 10 / 20px stretch;
+}
+.content-block11 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/border3.png") 9 25 / 20px round;
+}
+.content-block12 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/border3.png") 5 17 / 20px stretch;
+}

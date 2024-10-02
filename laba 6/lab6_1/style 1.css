@@ -1,0 +1,103 @@
+.panda-logo img {
+    border-radius: 80px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+li {
+    margin: 10px;
+    float: left;
+}
+li a {
+    text-align: right;
+    display: inline-block;
+    padding: 10px;
+    background: orangered;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: #ae6d14 2px 2px 1px;
+}
+.panda {
+    width: 1140px;
+    margin: 0 auto; /* Вирівнювання по центру */
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    border-right: 20px;
+    background-color: sandybrown;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.panda-menu{
+    padding-right: 20px;
+    width: 100%; /* Щоб меню розтягнулося на всю ширину контейнера */
+}
+/* Стилі для меню */
+.panda-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panda-menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+/* Колонки для багатоколоночного тексту */
+.panda-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.panda-column {
+    width: calc(33.33% - 35px); /* Ширина колонки з урахуванням відстані між ними */
+    padding-right: 3px;
+    border-right: 5px dashed red; /* Пунктирна лінія між колонками */
+    padding-left:2px;
+}
+.panda-column1 {
+    width: calc(33.33% - 35px); /* Ширина колонки з урахуванням відстані між ними */
+    padding-right: 35px;
+}
+.column:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* Зображення з float */
+.float-image {
+    float: left;
+    width: 150px;
+    margin: 10px; /* Відстані між зображенням і текстом */
+    border: solid 1px black;
+    top: 20px;
+}
+.float-image1{
+    clear: both; /* Очищення, щоб зображення було нижче тексту */
+    float: right;
+    width: 150px;
+    margin: 10px; /* Відстані між зображенням і текстом */
+    border: solid 1px black;
+    top: 20px;
+}
+
+
+/* Очищення float */
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
