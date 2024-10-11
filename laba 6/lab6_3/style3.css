@@ -61,7 +61,7 @@ header {
     margin: 0 120px;
 }
 .row-wrapper {
-    display: inline-block;
+    display: flex;
     width: inherit;
 }
 .content-block h3,
@@ -79,14 +79,13 @@ header {
 }
 .inner-content-block{
     width: 300px;
-    float: left;
-    margin: auto;
-    padding: 20px 60px;
+    margin: 20px 50px 10px 50px;
+    padding: 20px;
     background-color: #ff9501;
     border-radius: 50px;
 }
 
 .inner-content-block:last-child {
-    margin-left: 150px
+    margin-left: 250px;
 
 }

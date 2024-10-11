@@ -1,0 +1,59 @@
+.class-main-div{
+    height: 400px;
+    width: 600px;
+    margin: 100px 0px;
+    display:block;
+    position: relative;
+    border: 2px solid green;
+    left: 500px;
+}
+
+.class-main{
+    border: 2px solid green;
+
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.class1, .class2, .class3, .class4 {
+    position: absolute;
+}
+.class1{
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.class2{
+    color: black;
+    width: 150px;
+    background-color: mediumpurple;
+    height: 200px;
+    top: 0;
+    left:170px;
+}
+
+.class3{
+    color: white;
+    width: 240px;
+    border-color: red;
+    height: 200px;
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+
+.class4{
+    border-color: red;
+    background-color: mediumpurple;
+    top: 250px;
+    height: 100px;
+    left: 0;
+    right: 0;
+}
