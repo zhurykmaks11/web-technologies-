@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блочні елементи</title>
+  <style>
+    .class-main-div {
+      margin: 100px 0px;
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+
+    .class1, .class2, .class3, .class4 {
+      background-color: sandybrown;
+      position: absolute;
+    }
+
+    .class1 {
+      width: 150px;
+      height: 200px;
+      border: 2px solid green;
+      top: 20px;
+      left: 50px;
+    }
+
+    .class2 {
+      width: 150px;
+      height: 200px;
+      top: 240px;
+      left: 50px;
+    }
+
+    .class3 {
+      width: 200px;
+      height: 200px;
+      border: 2px solid red;
+      top: 20px;
+      left: 220px;
+    }
+
+    .class4 {
+      width: 540px;
+      height: 100px;
+      border: 2px solid red;
+      top: 450px;
+      left: 50px;
+      z-index: 2; /* цей блок буде поверх інших */
+    }
+  </style>
+</head>
+<body>
+
+<div class="class-main-div">
+  <div class="class1">Блок 1</div>
+  <div class="class2">Блок 2</div>
+  <div class="class3">Блок 3</div>
+  <div class="class4">Блок 4</div>
+</div>
+
+</body>
+</html>

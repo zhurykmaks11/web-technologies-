@@ -1,0 +1,98 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Для фіксації плаваючих елементів */
+
+}
+
+nav ul li {
+    display: inline-block;
+    float: none; /* Знімаємо float для центрування */
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Горизонтальна навігація */
+.horizontal-nav {
+    background-color: #333;
+    position: fixed;
+    top: 50px;
+    left: 500px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+.horizontal-nav img{
+    padding: 20px;
+}
+
+.horizontal-nav ul {
+    display: block;
+    justify-content: center;
+}
+
+.horizontal-nav ul li a {
+    color: white;
+}
+.horizontal-nav ul li a:hover {
+    background-color: green;
+}
+
+ul li + li {
+    margin-top: 10px;
+}
+/* Вертикальна навігація */
+.vertical-nav {
+
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    width: 200px;
+    height: 100%;
+}
+.vertical-nav ul  li{
+    display: block;
+    margin-top: 10px;
+    background-color: dodgerblue;
+}
+
+.vertical-nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #555;
+}
+.vertical-nav ul li a img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ .horizontal-nav ul li a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Позиціонування активного пункту меню */
+.active {
+    background-color: #444;
+}
