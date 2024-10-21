@@ -19,7 +19,7 @@
 .block1 {
     left: 30px;
     position: absolute;
-    display: inline-block; /* Блок 1 видимий з самого початку */
+    display: inline-block;
 }
 .block2{
     position: absolute;
@@ -37,11 +37,11 @@
     left: 30px;
 }
 .container:hover .block2 {
-    display: inline-block; /* При наведенні на контейнер з блоком 1 показується блок 2 */
+    display: block;
 }
 
 .block2:hover + .block3 {
-    display: block; /* При наведенні на блок 2 показується блок 3 */
+    display: block;
 }
 
 .block1:hover {

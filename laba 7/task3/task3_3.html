@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форма з псевдокласами та псевдоелементами</title>
-  <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма з псевдокласами та псевдоелементами</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
 
 <div class="form-container">
-  <h1 class="form-title">Заповніть форму</h1>
-  <form class="form">
-    <div class="left-column">
-      <label for="login">Login:</label>
-      <input type="text" id="login" name="login">
+    <h1 class="form-title">Заповніть форму</h1>
+    <form class="form">
+        <div class="left-column">
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password">
+            <div class="schedule-element">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login">
+            </div>
 
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first-name">
-    </div>
+            <div class="schedule-element">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
 
-    <div class="right-column">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
+            <div class="schedule-element">
+                <label class="firstlogin" for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+        </div>
 
-      <label for="repeat-password">Repeat password:</label>
-      <input type="password" id="repeat-password" name="repeat-password">
+        <div class="right-column">
 
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name">
-    </div>
+            <div class="schedule-element">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-    <div class="about-column">
-      <label for="about">About me:</label>
-      <textarea id="about" name="about"></textarea>
-    </div>
+            <div class="schedule-element">
+                <label for="repeat-password">Repeat password:</label>
+                <input type="password" id="repeat-password" name="repeat-password">
+            </div>
 
-    <div class="button-container">
-      <button type="reset" class="reset-btn">RESET</button>
-      <button type="submit" class="submit-btn"><a href="task3add'.html">OK</a></button>
+            <div class="schedule-element">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
 
-    </div>
-  </form>
+
+        <div class="">
+            <div class="about-column">
+                <label for="about">About me:</label>
+                <textarea id="about" name="about"></textarea>
+            </div>
+        </div>
+
+
+        <div class="schedule-button">
+            <div class="button-container">
+                <button type="reset" class="reset-btn">RESET</button>
+                <button type="submit" class="submit-btn"><a href="task3add'.html">OK</a></button>
+            </div>
+        </div>
+    </form>
 </div>
 
 </body>
