@@ -1,0 +1,320 @@
+/* General Styles */
+* {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Контейнер для центрування сторінки */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Автоматичні відступи зліва і справа для центрування */
+    padding: 0 20px; /* Внутрішні відступи для створення простору між контентом і краями вікна */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    color: #333333;
+    padding: 40px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #333333;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для меню */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #FF6347; /* Зміна кольору при наведенні */
+}
+
+/* Стили для іконки серця */
+.heart-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6347; /* Червоний фон для кнопки */
+    width: 40px;
+    height: 40px;
+    border-radius: 4px; /* Закруглення */
+}
+
+.heart-item a:hover {
+    background-color: #ff8567; /* Зміна кольору фону при наведенні */
+}
+
+.heart-icon {
+    color: white;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #eee;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+
+}
+
+
+/* Portfolio section */
+.portfolio {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+
+    color: black;
+}
+
+.portfolio h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.portfolio h2 span {
+    color: red;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container2 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    color: #666666;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.container2 h2 {
+    padding: 10px;
+}
+
+
+/* Filter Portfolio button styles */
+.portfolio-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+
+.filter-portfolio a {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.filter-portfolio a:hover {
+    background-color: #ff8567;
+}
+
+.portfolio .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio .grid-item {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.portfolio .grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.services-text {
+    padding: 40px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.services-text h2 span {
+    color: red;
+}
+
+.services .flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services .service-item {
+    flex: 1 1 200px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.services .service-item img {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Journal Section */
+.journal {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: left;
+}
+
+
+.journal h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.journal-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.journal-item {
+    display: flex;
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 20px;
+    margin-bottom: 30px;
+    flex-direction: row
+}
+
+.journal-item img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.journal-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.journal-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+.journal-info .date {
+    font-size: 14px;
+    color: #999;
+}
+
+.journal-info .category {
+    font-size: 14px;
+    color: #999;
+}
+
+.journal-info h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.journal-info p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
