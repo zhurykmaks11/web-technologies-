@@ -12,13 +12,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Контейнер для центрування сторінки */
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto; /* Автоматичні відступи зліва і справа для центрування */
-    padding: 0 20px; /* Внутрішні відступи для створення простору між контентом і краями вікна */
-}
-
 /* Container */
 .container {
     width: 80%;
@@ -28,7 +21,13 @@ body {
 /* Header */
 header {
     color: #333333;
-    padding: 40px 0;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -51,12 +50,11 @@ header .logo {
 /* Стили для меню */
 .menu {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .menu li {
@@ -69,10 +67,32 @@ header .logo {
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
 }
 
 .menu a:hover {
     color: #FF6347; /* Зміна кольору при наведенні */
+}
+
+/* Бургер-меню стилі */
+.menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none; /* Сховати бургер за замовчуванням */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.burger span {
+    display: block;
+    height: 3px; /* Висота смужок */
+    width: 30px; /* Ширина смужок */
+    background-color: #333; /* Колір смужок */
+    margin: 4px 0; /* Відступ між смужками */
 }
 
 /* Стили для іконки серця */
@@ -83,11 +103,11 @@ header .logo {
     background-color: #FF6347; /* Червоний фон для кнопки */
     width: 40px;
     height: 40px;
-    border-radius: 4px; /* Закруглення */
+    border-radius: 4px;
 }
 
 .heart-item a:hover {
-    background-color: #ff8567; /* Зміна кольору фону при наведенні */
+    background-color: #ff8567;
 }
 
 .heart-icon {
@@ -98,7 +118,7 @@ header .logo {
 /* Hero Section */
 .hero {
     background-color: #eee;
-    padding: 40px 0;
+    padding: 90px 0;
     text-align: left;
 }
 
@@ -189,7 +209,7 @@ header .logo {
 
 .portfolio .grid-item {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .portfolio .grid-item img {
@@ -318,3 +338,103 @@ footer {
 footer p {
     margin: 0;
 }
+
+.portfolio .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .grid-item {
+    flex: 0 0 33.3%; /* Три колонки на великих екранах */
+}
+
+/* Дві колонки на екранах менше 768px */
+@media (max-width: 768px) {
+    .portfolio .grid-item {
+        flex: 0 0 45%;
+    }
+
+    .journal-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .journal-item img {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+
+    .burger {
+        display: flex; /* Відображення бургер-меню на малих екранах */
+    }
+
+    nav {
+        position: absolute; /* Абсолютне позиціювання */
+        top: 100%; /* Розміщення під шапкою */
+        left: 0;
+        background-color: #fff; /* Фон меню */
+        width: 100%; /* Ширина на всю сторінку */
+        display: none; /* Сховати меню за замовчуванням */
+        flex-direction: column; /* Вертикальне розташування */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальне розташування пунктів меню */
+    }
+
+    /* Відображення меню при активному чекбоксі */
+    .menu-toggle:checked + .burger + nav {
+        display: flex; /* Показати меню */
+    }
+
+    .services .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services .service-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .journal-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .container nav {
+        display: none;
+    }
+
+    .filter-portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* Одна колонка на екранах менше 576px */
+@media (max-width: 576px) {
+    .portfolio .grid-item {
+        flex: 0 0 80%;
+    }
+
+
+    .services .service-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .filter-portfolio a .filter {
+        flex: 0 0 50%;
+        flex-direction: column; /* Вертикальне розташування пунктів меню */
+    }
+
+    .journal-item {
+        max-width: 100%;
+    }
+
+}
+
