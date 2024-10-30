@@ -72,7 +72,7 @@ header .logo {
 }
 
 .menu a:hover {
-    color: #FF6347; /* Зміна кольору при наведенні */
+    color: #FF6347;
 }
 
 /* Бургер-меню стилі */
@@ -81,7 +81,7 @@ header .logo {
 }
 
 .burger {
-    display: none; /* Сховати бургер за замовчуванням */
+    display: none;
     flex-direction: column;
     cursor: pointer;
 }
@@ -89,10 +89,10 @@ header .logo {
 
 .burger span {
     display: block;
-    height: 3px; /* Висота смужок */
-    width: 30px; /* Ширина смужок */
-    background-color: #333; /* Колір смужок */
-    margin: 4px 0; /* Відступ між смужками */
+    height: 3px;
+    width: 30px;
+    background-color: #333;
+    margin: 4px 0;
 }
 
 /* Стили для іконки серця */
@@ -100,7 +100,7 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FF6347; /* Червоний фон для кнопки */
+    background-color: #FF6347;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -193,7 +193,6 @@ header .logo {
     font-weight: bold;
     text-decoration: none;
     top: 0;
-    transition: background-color 0.3s ease;
 }
 
 .filter-portfolio a:hover {
@@ -283,8 +282,7 @@ header .logo {
 .journal-item {
     display: flex;
     flex: 1 1 45%;
-    max-width: 45%;
-    padding: 20px;
+    padding: 20px;;
     margin-bottom: 30px;
     flex-direction: row
 }
@@ -345,7 +343,7 @@ footer p {
 }
 
 .portfolio .grid-item {
-    flex: 0 0 33.3%; /* Три колонки на великих екранах */
+    flex: 0 0 33.3%;
 }
 
 /* Дві колонки на екранах менше 768px */
@@ -355,36 +353,39 @@ footer p {
     }
 
     .journal-item {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
+        text-align: left;
+        overflow: hidden;
     }
 
+
     .journal-item img {
-        width: 100%;
         margin: 0 0 15px 0;
+        height: 300px;
+        padding-right: 10px;
     }
 
 
     .burger {
-        display: flex; /* Відображення бургер-меню на малих екранах */
+        display: flex;
     }
 
     nav {
-        position: absolute; /* Абсолютне позиціювання */
-        top: 100%; /* Розміщення під шапкою */
+        position: absolute;
+        top: 100%;
         left: 0;
-        background-color: #fff; /* Фон меню */
-        width: 100%; /* Ширина на всю сторінку */
-        display: none; /* Сховати меню за замовчуванням */
-        flex-direction: column; /* Вертикальне розташування */
+        background-color: #fff;
+        width: 100%;
+        display: none;
+        flex-direction: column;
     }
 
     nav ul {
-        flex-direction: column; /* Вертикальне розташування пунктів меню */
+        flex-direction: column;
     }
 
-    /* Відображення меню при активному чекбоксі */
+
     .menu-toggle:checked + .burger + nav {
         display: flex; /* Показати меню */
     }
@@ -429,12 +430,24 @@ footer p {
 
     .filter-portfolio a .filter {
         flex: 0 0 50%;
-        flex-direction: column; /* Вертикальне розташування пунктів меню */
+        flex-direction: column;
     }
 
     .journal-item {
         max-width: 100%;
     }
 
+    .journal-item img {
+        width: 100%;
+        margin: 0 0 15px 0;
+        height: 300px;
+        padding-right: 0;
+    }
+
+    .journal-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
