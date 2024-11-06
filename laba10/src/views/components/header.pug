@@ -1,0 +1,17 @@
+header
+    .container
+        .logo Keepsake
+        input.menu-toggle(type="checkbox" id="menu-toggle")
+        label.burger(for="menu-toggle")
+            span
+            span
+            span
+
+        nav.nav-menu
+            ul.menu
+                each link in ["Home", "About Us", "Our Works", "Journal", "Contact"]
+                    li
+                        a(href="#")= link
+                li.heart-item
+                    a(href="#")
+                        span.heart-icon 🤍

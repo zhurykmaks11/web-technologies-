@@ -1,0 +1,90 @@
+@import 'base';
+
+.portfolio {
+  padding: 50px 0;
+  background-color: $secondary-color;
+  color: $text-color;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    span {
+      color: red;
+    }
+  }
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .grid-item {
+      flex: 1 1 300px;
+      max-width: 350px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .portfolio-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .filter-portfolio {
+    a {
+      background-color: $primary-color;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+      @include hover-color(#ff8567);
+    }
+  }
+}
+
+
+.portfolio .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio .grid-item {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.portfolio .grid-item img {
+  width: 100%;
+  height: auto;
+}
+.container2 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  color: #666666;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.container2 h2 {
+  padding: 10px;
+}

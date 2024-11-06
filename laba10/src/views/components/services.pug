@@ -1,0 +1,17 @@
+mixin service(title, image, description)
+    .service-item
+        img(src=`../img-task2/${image}.png` alt=title)
+        h3= title
+        p= description
+
+section.services
+    .container
+        .services-text
+            h2 What Do We Do<span> --</span>
+            p Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+
+        .flex
+            +service("Web Design", "img", "We create beautiful and functional websites.")
+            +service("Motion Video", "video", "Our videos bring stories to life.")
+            +service("Print Design", "print", "We design print materials that stand out.")
+            +service("Illustration", "heart", "Our illustrations are unique and creative.")

@@ -1,0 +1,22 @@
+section.journal
+    .container
+        h2 From the Journal <span>--</span>
+        p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+        //- Визначаємо змінну `articles`
+        - const articles = []
+        - articles.push({ date: "Oct 13, 2014", category: "Identity", title: "Sollicitudin Tortor Inceptos", image: "forest-1.jpg", description: "Maecenas faucibus mollis interdum." })
+        - articles.push({ date: "Oct 23, 2014", category: "Branding", title: "Amet Inceptos Fringilla Fusce", image: "forest-2.jpg", description: "Maecenas faucibus mollis interdum." })
+        - articles.push({ date: "Sep 19, 2014", category: "Identity", title: "Cursus Malesuada Justo", image: "forest-3.jpg", description: "Maecenas faucibus mollis interdum." })
+        - articles.push({ date: "Sep 27, 2014", category: "Branding", title: "Ornare Cursus Bibendum Purus", image: "forest-4.jpg", description: "Maecenas faucibus mollis interdum." })
+
+        .journal-grid
+            each article in articles
+                .journal-item
+                    img(src=`../img-task2/${article.image}` alt=`Journal Image ${article.title}`)
+                    .journal-info
+                        span.date= article.date
+                        span /
+                        span.category= article.category
+                        h3= article.title
+                        p= article.description

@@ -1,0 +1,42 @@
+@import 'base';
+
+.services {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+    span {
+      color: red;
+    }
+  }
+
+  .services-text {
+    padding: 40px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .service-item {
+      flex: 1 1 200px;
+      max-width: 200px;
+      text-align: center;
+
+      img {
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

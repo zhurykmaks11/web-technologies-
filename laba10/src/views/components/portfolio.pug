@@ -1,0 +1,18 @@
+section.portfolio
+    .container
+        .filter
+            h2 Our Awesome Works <span> --</span>
+            ul.portfolio-menu
+                li.filter-portfolio
+                    a(href="#") Filter Portfolio
+
+        .grid
+            each image, i in ["autum.jpg", "autum1.jpg", "autum2.jpg", "autum3.jpg", "autum4.jpg", "autum5.jpg", "autum6.jpg", "autum.7.1jpg", "autum6.jpg"]
+                .grid-item
+                    img(src=`../img-task2/${image}` alt=`Work ${i + 1}`)
+    .container2
+            h2 WOULD YOU LOVE TO WORK WITH US?
+            ul.portfolio-menu
+                li.filter-portfolio
+                    a(href="#") Contact us
+

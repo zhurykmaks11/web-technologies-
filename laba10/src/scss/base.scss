@@ -1,0 +1,36 @@
+// Змінні кольорів і шрифтів
+$primary-color: #FF6347;
+$secondary-color: #f9f9f9;
+$text-color: #333333;
+$font-family: "Arial", sans-serif;
+
+// Загальні стилі
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background-color: $secondary-color;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@mixin box-shadow($x: 0, $y: 4px, $blur: 6px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Зміна кольору при наведенні
+@mixin hover-color($color: $primary-color) {
+  &:hover {
+    color: $color;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'base';
+
+footer {
+  background-color: $text-color;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+
+  p {
+    margin: 0;
+  }
+}
