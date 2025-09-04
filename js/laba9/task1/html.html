@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <button id="signupTab" class="tab-btn active" data-tab="signup">Signup</button>
+        <button id="loginTab" class="tab-btn" data-tab="login">Login</button>
+    </div>
+
+    <form id="signup" class="form active">
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <div class="error-msg" id="firstNameError"></div>
+
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <div class="error-msg" id="lastNameError"></div>
+
+        <input type="email" id="email" placeholder="Email" required />
+        <div class="error-msg" id="emailError"></div>
+
+        <div class="password-toggle">
+            <input type="password" id="password" placeholder="Password" required />
+            <span class="toggle-icon" onclick="toggleVisibility('password')">👁️</span>
+        </div>
+        <div class="error-msg" id="passwordError"></div>
+
+        <div class="password-toggle">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            <span class="toggle-icon" onclick="toggleVisibility('confirmPassword')">👁️</span>
+        </div>
+        <div class="error-msg" id="confirmPasswordError"></div>
+
+        <input type="tel" id="phone" placeholder="Phone (+380...)" required />
+        <div class="error-msg" id="phoneError"></div>
+
+        <input type="date" id="dob" required />
+        <div class="error-msg" id="dobError"></div>
+
+        <select id="sex" required>
+            <option value="">Select Sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <div class="error-msg" id="sexError"></div>
+
+        <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="USA">USA</option>
+        </select>
+        <div class="error-msg" id="countryError"></div>
+
+        <select id="city" disabled required>
+            <option value="">Select City</option>
+        </select>
+        <div class="error-msg" id="cityError"></div>
+
+        <button type="submit" class="submit-btn">Signup</button>
+        <div class="success-msg" id="signupSuccess"></div>
+    </form>
+
+    <form id="login" class="form">
+        <input type="text" id="loginUsername" placeholder="Username" required />
+        <div class="error-msg" id="loginUsernameError"></div>
+
+        <div class="password-toggle">
+            <input type="password" id="loginPassword" placeholder="Password" required />
+            <span class="toggle-icon" onclick="toggleVisibility('loginPassword')">👁️</span>
+        </div>
+        <div class="error-msg" id="loginPasswordError"></div>
+
+        <label><input type="checkbox" id="rememberMe" /> Remember Me</label>
+
+        <button type="submit" class="submit-btn">Login</button>
+        <div class="success-msg" id="loginSuccess"></div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
